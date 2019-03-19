@@ -29,9 +29,9 @@ func FindImgs(){
 			}
 		
 	}
-
-	time.Sleep(3*1000*1000*1000)
 	fmt.Println("正在整理完毕共",i,"个")
+	time.Sleep(3*1000*1000*1000)
+	
 }
 func copyToFolder(folderName,file string)(int64, error){
 	sFile,err:= os.Open(file)
